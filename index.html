@@ -1,767 +1,729 @@
-<!doctype html>
-<html lang="fr" data-lang="fr">
+<!DOCTYPE html>
+<html lang="fr-CA">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Doux Perçage — Perçage à l'aiguille et formation, Montréal</title>
-<meta name="description" content="Studio de perçage à l'aiguille et centre de formation à Montréal. Bijoux en titane implant-grade, crème anesthésiante, sur rendez-vous. Nour Jeha, fondatrice.">
+<title>Doux Perçage — Formation et certification en perçage · Montréal</title>
+<meta name="description" content="Formation pratique en perçage d'oreilles et perçage corporel. Certification remise à la fin et accompagnement pour vos débuts.">
 <link rel="canonical" href="https://hostnextline.github.io/douxpercage/">
-
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CA">
 <meta property="og:site_name" content="Doux Perçage">
-<meta property="og:title" content="Doux Perçage — Perçage à l'aiguille et formation, Montréal">
-<meta property="og:description" content="Perçage à l'aiguille, bijoux en titane implant-grade, sur rendez-vous. Formation certifiante avec Nour Jeha.">
+<meta property="og:title" content="Doux Perçage — Formation et certification en perçage, Montréal">
+<meta property="og:description" content="Formation pratique sur modèle, certification remise à la fin, accompagnement pour vos débuts. Avec Nour Jeha, fondatrice.">
 <meta property="og:url" content="https://hostnextline.github.io/douxpercage/">
 <meta property="og:image" content="https://hostnextline.github.io/douxpercage/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Doux Perçage — perçage à l'aiguille et formation, Montréal">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icon-180.png">
-<meta name="theme-color" content="#F0EAE0">
-
+<meta name="theme-color" content="#0C0D12">
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
-<link rel="preload" as="font" type="font/woff2" href="assets/polices/newsreader-normal.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="assets/polices/publicsans-normal.woff2" crossorigin>
-
+<link rel="preload" as="font" type="font/woff2" href="assets/polices/fraunces-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/polices/jost-normal.woff2" crossorigin>
 <style>
-/* Polices hébergées ici, pas chez Google. Une feuille de style externe
-   bloque le rendu : tant qu'elle n'arrive pas, aucun pixel ne se peint,
-   et la latence d'un tiers décidait donc du FCP — mesuré entre 1,6 s et
-   3,1 s d'une exécution à l'autre. Ces règles étant en ligne dans le
-   document, plus rien n'attend un autre domaine.
-   Variables sur le seul axe de graisse (l'axe de taille optique triplait
-   le poids) et sous-ensemble latin seul : les 83 caractères affichés par
-   la page y tiennent tous, vérification faite. 145 Ko au total.
-   Effet de bord bienvenu : Google Fonts journalise les adresses IP des
-   visiteurs — le pied de page peut maintenant dire sans réserve que le
-   site ne recueille aucune donnée. */
-@font-face{font-family:"Newsreader";font-style:normal;font-weight:200 400;font-display:swap;src:url(assets/polices/newsreader-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:"Newsreader";font-style:italic;font-weight:200 400;font-display:swap;src:url(assets/polices/newsreader-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:"Public Sans";font-style:normal;font-weight:400 500;font-display:swap;src:url(assets/polices/publicsans-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* Polices servies depuis ce dépôt : une feuille de style tierce bloquerait
+   le rendu, et la latence d'un autre domaine déciderait du score. */
+@font-face{font-family:"Fraunces";font-style:italic;font-weight:300 600;font-display:swap;src:url(assets/polices/fraunces-italic.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:300 600;font-display:swap;src:url(assets/polices/fraunces-normal.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Jost";font-style:normal;font-weight:300 600;font-display:swap;src:url(assets/polices/jost-normal.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 
-/* ─────────────────────────────────────────────────────────────
-   Doux Perçage
-   Palette : ivoire · encre · titane. Aucun or dans l'interface —
-   le seul or de la page vient des photographies.
-   Rythme : macro-espacement strictement en multiples de 8 px,
-   micro-espacement en multiples de 4 px.
-   ───────────────────────────────────────────────────────────── */
+/* ============================================================
+   DOUX PERÇAGE — maquette
+   Palette : encre / nuit / ivoire / or (certificat) / rose doux
+   Type    : Fraunces (display, axes SOFT+WONK) + Jost (texte)
+   ============================================================ */
 :root{
-  --ivoire:#F0EAE0;
-  --ivoire-clair:#F7F4EE;
-  --ivoire-fonce:#E4DCCF;
-  --encre:#1C1F1E;
-  --encre-doux:#4A4F4D;
-  --titane:#8C9196;
-  --titane-clair:#CFCEC8;
-
-  --s1:8px;  --s2:16px; --s3:24px; --s4:32px;
-  --s5:48px; --s6:64px; --s7:96px; --s8:128px; --s9:176px;
-
-  --display:"Newsreader",Georgia,"Times New Roman",serif;
-  --texte:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-
-  --mesure:min(92vw,1240px);
-  --transition:200ms cubic-bezier(.2,.6,.3,1);
+  --encre:#0C0D12;
+  --nuit:#151723;
+  --ivoire:#F4F0E9;
+  --creme:#E8E1D5;
+  --or:#C39A57;
+  --or-clair:#E0C08A;
+  --rose:#C98B84;
+  --brume:#9AA0B2;
+  --pad-y:clamp(88px,13vh,150px);
+  --gut:clamp(20px,5vw,68px);
+  --ease:cubic-bezier(.22,1,.36,1);
 }
-
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
-  margin:0;
-  background:var(--ivoire);
-  color:var(--encre);
-  font-family:var(--texte);
-  font-size:17px;
-  line-height:1.65;
-  font-weight:400;
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-  overflow-x:hidden;
+  margin:0;background:var(--encre);color:var(--ivoire);
+  font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-weight:300;font-size:clamp(16px,1.05vw,17.5px);line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
-h1,h2,h3,p,figure,blockquote,dl{margin:0}
-ul{margin:0;padding:0;list-style:none}
 img,video{display:block;max-width:100%}
-a{color:inherit}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--or-clair);outline-offset:4px;border-radius:2px}
+.wrap{width:min(1240px,100% - var(--gut)*2);margin-inline:auto}
 
-/* Bascule de langue : le français est servi tel quel, l'anglais est
-   masqué par le CSS lui-même — donc aucun clignotement au chargement,
-   et aucun décalage de mise en page. */
-.en{display:none}
-html[data-lang="en"] .fr{display:none}
-html[data-lang="en"] .en{display:revert}
+/* ---------- typographie ---------- */
+h1,h2,h3,.serif{
+  font-family:'Fraunces',Georgia,serif;font-weight:300;
+  font-variation-settings:'SOFT' 60,'WONK' 1;
+  letter-spacing:-.02em;line-height:1.02;margin:0;
+}
+h1{font-size:clamp(2.7rem,6.6vw,5.2rem)}
+h2{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.06}
+h3{font-size:clamp(1.25rem,1.9vw,1.6rem);line-height:1.15}
+em{font-style:italic;color:var(--or-clair)}
+p{margin:0 0 1em}
+h2 + .lede,h2 + p{margin-top:1.1em}
+.lede{font-size:clamp(1.02rem,1.35vw,1.22rem);color:#D8D4CB;max-width:52ch}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;
+  font-weight:400;color:var(--or);display:flex;align-items:center;gap:.7em;margin:0 0 1.3em;
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--or);flex:none}
 
-:focus-visible{outline:2px solid var(--encre);outline-offset:3px;border-radius:2px}
+/* ---------- boutons ---------- */
+.btn{
+  --bg:var(--or);--fg:#14151C;
+  display:inline-flex;align-items:center;gap:.7em;
+  padding:1.05em 1.9em;background:var(--bg);color:var(--fg);
+  font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:500;
+  border:1px solid var(--bg);border-radius:999px;cursor:pointer;
+  transition:transform .5s var(--ease),background .4s var(--ease),color .4s var(--ease),box-shadow .5s var(--ease);
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(195,154,87,.7)}
+.btn--ghost{--bg:transparent;--fg:var(--ivoire);border-color:rgba(244,240,233,.34)}
+.btn--ghost:hover{--bg:rgba(244,240,233,.08);box-shadow:none}
+.btn--dark{--bg:var(--encre);--fg:var(--ivoire)}
+.btn svg{width:14px;height:14px;transition:transform .5s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
 
-.enveloppe{width:var(--mesure);margin-inline:auto}
+/* ---------- rail « la ligne » (signature) ---------- */
+.rail{position:fixed;left:26px;top:0;bottom:0;width:1px;background:rgba(140,136,128,.32);z-index:40;display:none}
+.rail__fill{position:absolute;inset:0;background:linear-gradient(180deg,var(--or-clair),var(--or));transform:scaleY(0);transform-origin:top;will-change:transform}
+.rail__stud{position:absolute;left:50%;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;
+  background:var(--encre);border:1px solid rgba(244,240,233,.3);transition:border-color .5s var(--ease),box-shadow .5s var(--ease),background .5s var(--ease)}
+.rail__stud.on{background:var(--or-clair);border-color:var(--or-clair);box-shadow:0 0 0 4px rgba(195,154,87,.16)}
+@media (min-width:1080px){.rail{display:block}}
 
-/* ── Typographie ─────────────────────────────────────────────── */
-.sourcil{
-  font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--titane);margin:0 0 var(--s3);
-}
-.titre{
-  font-family:var(--display);font-weight:300;
-  font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.08;letter-spacing:-.022em;
-  margin:0 0 var(--s4);
-}
-.titre em{font-style:italic;font-weight:200}
-.plomb{
-  font-size:clamp(1rem,1.5vw,1.15rem);color:var(--encre-doux);
-  max-width:56ch;margin:0 0 var(--s2);
-}
+/* ---------- nav ---------- */
+.nav{position:absolute;top:0;left:0;right:0;z-index:20;padding:clamp(18px,3vh,34px) 0}
+.nav__in{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Fraunces',serif;font-size:1.32rem;letter-spacing:.01em;font-variation-settings:'SOFT' 80,'WONK' 1}
+.logo span{color:var(--or)}
+.nav__links{display:none;gap:34px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#CFCBC2}
+.nav__links a{position:relative;padding-bottom:3px}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--or);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav__links a:hover::after{transform:scaleX(1);transform-origin:left}
+@media (min-width:900px){.nav__links{display:flex}}
 
-/* ── En-tête ─────────────────────────────────────────────────── */
-.entete{position:absolute;inset:0 0 auto;z-index:3;padding-block:var(--s4)}
-.entete .enveloppe{display:flex;align-items:center;justify-content:space-between;gap:var(--s3)}
-.marque{
-  font-family:var(--display);font-size:20px;font-weight:400;letter-spacing:-.01em;
-  text-decoration:none;display:inline-flex;align-items:center;gap:12px;
-}
-.marque svg{width:16px;height:16px;flex:none}
-.langues{display:flex;align-items:center;gap:var(--s1);font-size:12px}
-.langues button{
-  font:inherit;background:none;border:0;padding:4px 8px;cursor:pointer;
-  color:var(--titane);letter-spacing:.08em;transition:color var(--transition);
-}
-.langues button:hover{color:var(--encre)}
-.langues button[aria-pressed="true"]{color:var(--encre);text-decoration:underline;text-underline-offset:4px}
-.langues span{color:var(--titane-clair)}
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 0 clamp(48px,9vh,90px);isolation:isolate;overflow:hidden}
+.hero__media{position:absolute;inset:0;z-index:-2}
+.hero__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 84%;filter:brightness(1.22) saturate(1.1)}
+video.hero__video{opacity:0;transition:opacity 900ms var(--ease)}
+video.hero__video.visible{opacity:1}
+@media (min-width:1100px){.hero__video{filter:brightness(1.24) saturate(1.12) contrast(1.03) blur(.7px);transform:scale(1.03)}}
+.hero__tint{position:absolute;inset:0;
+  background:
+    radial-gradient(70% 55% at 78% 18%,rgba(195,154,87,.20),transparent 65%),
+    radial-gradient(60% 50% at 10% 90%,rgba(201,139,132,.16),transparent 70%);
+  mix-blend-mode:soft-light}
+.hero__scrim{position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(12,13,18,.62) 0%,rgba(12,13,18,.10) 30%,rgba(12,13,18,.55) 72%,var(--encre) 100%),
+    linear-gradient(92deg,rgba(12,13,18,.80) 0%,rgba(12,13,18,.34) 44%,rgba(12,13,18,0) 82%)}
+.hero__grain{position:absolute;inset:0;opacity:.10;mix-blend-mode:overlay;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='.55'/></svg>")}
+.hero__in{position:relative;width:min(1240px,100% - var(--gut)*2);margin-inline:auto}
+.hero h1{max-width:16ch;margin-bottom:.5em}
+.hero .lede{margin-bottom:2.2em}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero__note{margin:1.6em 0 0;font-size:.86rem;color:var(--brume);letter-spacing:.02em}
+.hero__foot{position:absolute;right:var(--gut);bottom:clamp(48px,9vh,90px);display:none;align-items:center;gap:18px;z-index:2}
+@media (min-width:900px){.hero__foot{display:flex}}
+.vidbtn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(244,240,233,.32);background:rgba(12,13,18,.35);
+  color:var(--ivoire);display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:background .4s var(--ease),border-color .4s var(--ease)}
+.vidbtn:hover{background:rgba(244,240,233,.14);border-color:var(--or)}
+.scrollcue{writing-mode:vertical-rl;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brume);display:flex;align-items:center;gap:12px}
+.scrollcue::after{content:"";width:1px;height:52px;background:linear-gradient(var(--or),transparent);animation:cue 2.6s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* ── Hero ────────────────────────────────────────────────────── */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-media{position:absolute;inset:0;z-index:0}
-.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;object-position:74% 50%}
-.hero-media video{position:absolute;inset:0;opacity:0;transition:opacity 600ms ease}
-.hero-media video.visible{opacity:1}
-/* Voile : garantit le contraste du texte quel que soit le recadrage. */
-.hero-media::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(100deg,var(--ivoire) 4%,rgba(240,234,224,.88) 34%,rgba(240,234,224,.12) 64%);
-}
-/* Le contenu garde la largeur de l'enveloppe : il s'aligne ainsi sur la
-   même verticale que toutes les autres sections. C'est le titre qui est
-   contraint, pas le bloc — sinon « margin-inline:auto » le recentre. */
-.hero-contenu{position:relative;z-index:2;padding-block:var(--s8) var(--s7)}
-.hero h1{
-  font-family:var(--display);font-weight:200;
-  font-size:clamp(3rem,8.2vw,6.5rem);line-height:.98;letter-spacing:-.035em;
-  max-width:12ch;margin:0 0 var(--s4);
-}
-.hero h1 em{font-style:italic;font-weight:200}
-.hero .plomb{margin-bottom:var(--s5);max-width:44ch}
+/* ---------- bandeau défilant ---------- */
+.ticker{border-block:1px solid rgba(244,240,233,.10);background:var(--nuit);overflow:hidden;padding:15px 0}
+.ticker__track{display:flex;width:max-content;gap:0;animation:slide 34s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker span{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#BDB8AF;padding:0 26px;display:flex;align-items:center;gap:26px;white-space:nowrap}
+.ticker span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--or)}
+@keyframes slide{to{transform:translateX(-50%)}}
 
-/* Signature — « la chute douce » : les mots du titre descendent et se
-   posent, exactement comme les bijoux de la vidéo derrière eux.
-   C'est le seul moment orchestré de la page. */
-.chute{display:inline-block;opacity:0;transform:translateY(-.34em);
-  animation:chute 1100ms cubic-bezier(.19,1,.22,1) forwards}
-.chute:nth-child(2){animation-delay:140ms}
-@keyframes chute{to{opacity:1;transform:none}}
+/* ---------- sections ---------- */
+section{position:relative}
+.sec{padding-block:var(--pad-y)}
+.sec--light{background:var(--ivoire);color:#1A1B22}
+.sec--light .lede{color:#4A4C57}
+.sec--light .eyebrow{color:#9A7738}
+.sec--light .eyebrow::before{background:#9A7738}
+.sec__head{display:grid;gap:clamp(18px,3vw,52px);align-items:end;margin-bottom:clamp(44px,6vw,78px)}
+@media (min-width:900px){.sec__head{grid-template-columns:1.15fr .85fr}}
 
-/* ── Bouton ──────────────────────────────────────────────────── */
-.appel{
-  display:inline-flex;align-items:center;gap:12px;
-  background:var(--encre);color:var(--ivoire-clair);
-  font-size:15px;font-weight:500;text-decoration:none;
-  padding:16px var(--s4);border-radius:999px;
-  transition:background var(--transition),transform var(--transition);
-}
-.appel:hover{background:#2E3331;transform:translateY(-1px)}
-.appel:active{transform:translateY(0)}
-.appel svg{width:15px;height:15px;flex:none}
+/* piliers */
+.pillars{display:grid;gap:1px;background:rgba(244,240,233,.12);border-block:1px solid rgba(244,240,233,.12)}
+@media (min-width:820px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillar{background:var(--encre);padding:clamp(30px,3.4vw,46px) clamp(24px,2.6vw,38px)}
+.pillar h3{margin-bottom:.55em}
+.pillar p{color:var(--brume);margin:0;font-size:.97rem}
+.pillar__num{font-family:'Fraunces',serif;font-size:.8rem;letter-spacing:.2em;color:var(--or);display:block;margin-bottom:1.9em}
 
-/* ── Bandeau de preuve ───────────────────────────────────────── */
-.bandeau{border-block:1px solid var(--ivoire-fonce);background:var(--ivoire-clair)}
-.bandeau ul{
-  display:flex;flex-wrap:wrap;gap:var(--s2) var(--s6);
-  padding-block:var(--s3);font-size:13px;color:var(--encre-doux);
-}
-.bandeau b{font-weight:500;color:var(--encre)}
+/* cartes formations */
+.cards{display:grid;gap:clamp(18px,2.2vw,26px)}
+@media (min-width:860px){.cards{grid-template-columns:1fr 1fr}}
+.card{display:flex;flex-direction:column;position:relative;border:1px solid rgba(26,27,34,.14);border-radius:4px;padding:clamp(28px,3.2vw,44px);background:#FBF9F5;
+  transition:transform .6s var(--ease),box-shadow .6s var(--ease),border-color .6s var(--ease);overflow:hidden}
+.card::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--or),var(--rose));transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 60px -34px rgba(26,27,34,.45);border-color:rgba(26,27,34,.2)}
+.card:hover::after{transform:scaleX(1)}
+.card h3{margin-bottom:.45em}
+.card__kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9A7738;margin-bottom:1.6em}
+.card ul{list-style:none;margin:1.6em 0 2.4em;padding:0;display:grid;gap:.75em}
+.card li{position:relative;padding-left:26px;color:#4A4C57;font-size:.97rem}
+.card li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;border-radius:50%;border:1px solid var(--or)}
+.card__price{font-family:'Fraunces',serif;font-size:1.05rem;color:#1A1B22;border-top:1px solid rgba(26,27,34,.14);padding-top:1.2em;margin:auto 0 1.6em}
+.card .btn{align-self:flex-start}
+.card__price small{display:block;font-family:'Jost',sans-serif;font-size:.82rem;color:#6E7080;letter-spacing:.02em;margin-top:.35em}
 
-/* ── Sections ────────────────────────────────────────────────── */
-.section{padding-block:112px}
-.section--serre{padding-block:88px}
-.duo{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s6) var(--s7);align-items:start}
-.intro{max-width:56ch;margin-bottom:var(--s6)}
+/* déroulé */
+.steps{display:grid;gap:1px;background:rgba(244,240,233,.12)}
+@media (min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--encre);padding:clamp(26px,2.8vw,38px) clamp(22px,2.2vw,30px);position:relative}
+.step__n{font-family:'Fraunces',serif;font-size:2.7rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(195,154,87,.55);display:block;margin-bottom:.4em}
+.step h3{font-size:1.08rem;margin-bottom:.5em}
+.step p{color:var(--brume);font-size:.94rem;margin:0}
 
-/* ── Liste de faits ──────────────────────────────────────────── */
-.faits{display:grid;gap:0}
-.fait{
-  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);
-  gap:var(--s3);padding-block:var(--s3);
-  border-top:1px solid var(--ivoire-fonce);
-}
-.fait:last-child{border-bottom:1px solid var(--ivoire-fonce)}
-.fait dt{font-weight:500;font-size:15px}
-.fait dd{margin:0;color:var(--encre-doux);font-size:15px}
+/* bande service */
+.split{display:grid;gap:clamp(30px,5vw,70px);align-items:center}
+@media (min-width:900px){.split{grid-template-columns:1.05fr .95fr}}
+.frame{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:var(--nuit)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.frame::after{content:"";position:absolute;inset:10px;border:1px solid rgba(244,240,233,.28);pointer-events:none}
 
-/* ── Zones de perçage ────────────────────────────────────────── */
-.zones{
-  display:flex;flex-wrap:wrap;gap:var(--s2);
-  font-family:var(--display);font-size:clamp(1.5rem,3.4vw,2.4rem);
-  font-weight:300;letter-spacing:-.02em;margin:0 0 var(--s5);
-}
-.zones li{display:flex;align-items:center;gap:var(--s2)}
-.zones li:not(:last-child)::after{
-  content:"";width:5px;height:5px;border-radius:50%;background:var(--titane);
-}
+/* FAQ */
+.faq{border-top:1px solid rgba(244,240,233,.12)}
+.faq details{border-bottom:1px solid rgba(244,240,233,.12)}
+.sec--light .faq,.sec--light .faq details{border-color:rgba(26,27,34,.14)}
+.faq summary{list-style:none;cursor:pointer;padding:1.5em 46px 1.5em 0;position:relative;font-family:'Fraunces',serif;font-size:clamp(1.05rem,1.5vw,1.3rem);font-variation-settings:'SOFT' 60,'WONK' 1}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:12px;height:1px;background:var(--or);transition:transform .45s var(--ease)}
+.faq summary::before{content:"";position:absolute;right:8px;top:50%;width:12px;height:1px;background:var(--or);transform:rotate(90deg);transition:transform .45s var(--ease)}
+.faq details[open] summary::before{transform:rotate(0)}
+.faq p{padding:0 0 1.9em;margin:0;max-width:68ch;color:#4A4C57}
 
-/* ── Formations ──────────────────────────────────────────────── */
-/* Pas de boîte. Deux colonnes de fiche technique ouvertes par un filet,
-   comme le tableau de faits plus haut. Le prix porte la section ; le
-   cadre ne faisait aucun travail. */
-.formations{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:var(--s6) var(--s7)}
-.formation{display:flex;flex-direction:column;border-top:1px solid var(--encre);padding-top:var(--s4)}
-.formation h3{
-  font-family:var(--display);font-weight:300;font-size:1.5rem;letter-spacing:-.02em;
-  margin:0 0 var(--s1);
-}
-.formation .portee{font-size:14px;color:var(--encre-doux);margin:0 0 var(--s4)}
-/* Le prix est traité comme un titre, pas rangé dans une fiche :
-   c'est l'argument, il mérite l'échelle du display. */
-.prix{
-  font-family:var(--display);font-weight:300;
-  font-size:clamp(2.6rem,5vw,3.6rem);line-height:1;letter-spacing:-.03em;
-  font-variant-numeric:tabular-nums;margin:0 0 var(--s5);
-}
-.prix small{
-  font-family:var(--texte);font-size:13px;font-weight:400;letter-spacing:.04em;
-  color:var(--titane);display:block;margin-top:12px;
-}
-.inclus{display:grid;gap:12px;font-size:14.5px;color:var(--encre-doux);margin-top:auto}
-.inclus li{display:grid;grid-template-columns:16px 1fr;gap:8px;align-items:start}
-.inclus li::before{
-  content:"";width:5px;height:5px;border-radius:50%;background:var(--titane);
-  margin-top:8px;margin-left:4px;
-}
+/* formulaire */
+.form{display:grid;gap:22px}
+.field label{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brume);margin-bottom:.7em}
+.field input,.field select{
+  width:100%;padding:1em 1.1em;background:rgba(244,240,233,.04);color:var(--ivoire);
+  border:1px solid rgba(244,240,233,.18);border-radius:3px;font:inherit;font-size:1rem;
+  transition:border-color .4s var(--ease),background .4s var(--ease)}
+.field input:focus,.field select:focus{border-color:var(--or);background:rgba(244,240,233,.07);outline:none}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--or) 50%),linear-gradient(135deg,var(--or) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.form__row{display:grid;gap:22px}
+@media (min-width:640px){.form__row{grid-template-columns:1fr 1fr}}
+.form__note{font-size:.84rem;color:var(--brume);margin:.4em 0 0}
+.form__ok{display:none;border:1px solid var(--or);border-radius:3px;padding:1.5em;color:var(--or-clair);font-size:.98rem}
+.form.sent .form__ok{display:block}
+.form.sent .form__body{display:none}
 
-/* ── Avis ────────────────────────────────────────────────────── */
-.avis{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s6) var(--s5)}
-.avis blockquote{
-  font-family:var(--display);font-weight:300;
-  font-size:clamp(1.05rem,1.7vw,1.28rem);line-height:1.45;letter-spacing:-.01em;
-}
-.avis figcaption{
-  margin-top:var(--s3);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--titane);
-}
-.avis figcaption b{display:block;font-weight:500;letter-spacing:.06em;color:var(--encre);margin-bottom:4px}
-.mention{font-size:13px;color:var(--titane);margin-top:var(--s6)}
+/* footer */
+.foot{border-top:1px solid rgba(244,240,233,.12);padding-block:clamp(44px,6vw,72px) 34px}
+.foot__grid{display:grid;gap:34px}
+@media (min-width:760px){.foot__grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin:0 0 1.4em;font-weight:500}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.7em;color:var(--brume);font-size:.95rem}
+.foot a:hover{color:var(--ivoire)}
+.foot__base{margin-top:clamp(40px,5vw,64px);padding-top:22px;border-top:1px solid rgba(244,240,233,.1);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.8rem;color:#6C7186}
 
-/* ── Adresse ─────────────────────────────────────────────────── */
-.adresse-lien{
-  font-family:var(--display);font-weight:300;
-  font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.28;letter-spacing:-.02em;
-  text-decoration:none;display:inline-block;
-  border-bottom:1px solid var(--titane-clair);padding-bottom:8px;
-  transition:border-color var(--transition);
-}
-.adresse-lien:hover{border-color:var(--encre)}
+/* ---------- révélations ---------- */
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+[data-reveal].in{opacity:1;transform:none}
 
-/* ── Pied de page ────────────────────────────────────────────── */
-.pied{background:var(--encre);color:var(--ivoire);padding-block:var(--s8) var(--s5)}
-.pied a{text-decoration:none}
-.pied-haut{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s6);align-items:end;padding-bottom:var(--s7)}
-.pied h2{
-  font-family:var(--display);font-weight:200;
-  font-size:clamp(2.2rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.03em;margin:0;
-}
-.pied h2 em{font-style:italic}
-.pied .appel{background:var(--ivoire-clair);color:var(--encre)}
-.pied .appel:hover{background:#FFFFFF}
-.pied-grille{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:var(--s5);
-  padding-block:var(--s6);border-top:1px solid rgba(240,234,224,.16);
-}
-.pied-grille h3{
-  font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--titane);margin:0 0 var(--s2);
-}
-.pied-grille li+li{margin-top:12px}
-.pied-grille a,.pied-grille p{font-size:15px;color:var(--ivoire);opacity:.86;transition:opacity var(--transition)}
-.pied-grille a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
-.pied-bas{
-  display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);justify-content:space-between;
-  padding-top:var(--s5);border-top:1px solid rgba(240,234,224,.16);
-  font-size:12.5px;color:var(--titane);
-}
+/* ── Avis ─────────────────────────────────────────────────── */
+.avis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(26px,3vw,48px)}
+.avis figure{margin:0;border-top:1px solid rgba(195,154,87,.34);padding-top:1.5em}
+.avis blockquote{margin:0;font-family:Fraunces,Georgia,serif;font-weight:300;
+  font-size:clamp(1rem,1.15vw,1.1rem);line-height:1.52;color:var(--creme)}
+.avis figcaption{margin-top:1.5em;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brume)}
+.avis figcaption b{display:block;font-weight:500;letter-spacing:.05em;color:var(--ivoire);margin-bottom:5px}
+.avis__note{margin:3em 0 0;font-size:.84rem;line-height:1.6;color:var(--brume);max-width:72ch}
+@media (max-width:820px){.avis{grid-template-columns:1fr}}
 
-/* ── Révélations au défilement ───────────────────────────────── */
-.reveler{opacity:0;transform:translateY(18px);
-  transition:opacity 700ms cubic-bezier(.19,1,.22,1),transform 700ms cubic-bezier(.19,1,.22,1)}
-.reveler.vu{opacity:1;transform:none}
-.reveler.d1{transition-delay:80ms}
-.reveler.d2{transition-delay:160ms}
-.reveler.d3{transition-delay:240ms}
-
-/* ── Mobile ──────────────────────────────────────────────────── */
-@media (max-width:860px){
-  body{font-size:16px}
-  .duo{grid-template-columns:1fr;gap:var(--s5)}
-  .fait{grid-template-columns:1fr;gap:4px}
-  .section{padding-block:var(--s7)}
-  .section--serre{padding-block:var(--s6)}
-  .hero-contenu{padding-block:var(--s8) var(--s6)}
-  .hero-media::after{
-    background:linear-gradient(172deg,var(--ivoire) 14%,rgba(240,234,224,.9) 48%,rgba(240,234,224,.26) 100%);
-  }
-  .hero-media img,.hero-media video{object-position:66% 40%}
-  .pied-haut{grid-template-columns:1fr;align-items:start;gap:var(--s4)}
-  .bandeau ul{gap:var(--s1) var(--s4)}
-  .formations{gap:var(--s5)}
-  .intro{margin-bottom:var(--s5)}
-}
-@media (max-width:420px){
-  .appel{width:100%;justify-content:center}
-}
-
-/* ── Mouvement réduit : tout se pose immédiatement, et la vidéo
-      n'est jamais téléchargée (voir le script). ──────────────── */
 @media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{
-    animation-duration:.001ms!important;animation-iteration-count:1!important;
-    transition-duration:.001ms!important;scroll-behavior:auto!important;
-  }
-  .chute{opacity:1;transform:none}
-  .reveler{opacity:1;transform:none}
-}
-
-/* À l'impression, rien ne doit dépendre d'un défilement qui n'aura pas lieu. */
-@media print{
-  .chute{opacity:1;transform:none;animation:none}
-  .reveler{opacity:1;transform:none}
-  .hero{min-height:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  [data-reveal]{opacity:1;transform:none}
+  .ticker__track{animation:none}
 }
 </style>
-
-<!-- Les révélations partent de opacity:0 et ne sont dévoilées que par le
-     script. Sans JavaScript, la page resterait donc presque vide : on
-     rétablit tout ici. Le contenu passe avant l'animation. -->
-<noscript><style>
-  .reveler{opacity:1;transform:none}
-  .chute{opacity:1;transform:none;animation:none}
-</style></noscript>
+<noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
-<header class="entete">
-  <div class="enveloppe">
-    <a class="marque" href="#" aria-label="Doux Perçage, retour en haut de page">
-      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-        <circle cx="8" cy="8" r="6.1" fill="none" stroke="currentColor" stroke-width="1.3"/>
-        <circle cx="8" cy="1.9" r="1.9" fill="currentColor"/>
-      </svg>
-      Doux Perçage
-    </a>
-    <div class="langues">
-      <button type="button" data-set-lang="fr" aria-pressed="true">FR</button>
-      <span aria-hidden="true">·</span>
-      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-    </div>
+<!-- signature : la ligne + les studs -->
+<div class="rail" aria-hidden="true"><div class="rail__fill" id="railFill"></div></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="#top" class="logo">Doux<span>·</span>Perçage</a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#formations">Formations</a>
+      <a href="#deroule">Déroulé</a>
+      <a href="#service">Se faire percer</a>
+      <a href="#contact">Nous joindre</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost" style="padding:.8em 1.4em">Réserver</a>
   </div>
 </header>
 
-<main>
+<main id="top">
 
-<!-- ── Hero ──────────────────────────────────────────────────── -->
+<!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero-media">
-    <img src="assets/hero.jpg" width="1440" height="804" fetchpriority="high"
-         alt="Petites boucles d’oreilles en titane et en or, anneaux et puces, suspendues en l’air devant un fond ivoire.">
-    <video id="video-hero" muted loop playsinline preload="none"
-           poster="assets/hero.jpg" data-src="assets/hero.mp4" aria-hidden="true" tabindex="-1"></video>
+  <div class="hero__media">
+    <img class="hero__video" src="assets/hero.jpg" width="480" height="500" fetchpriority="high"
+         alt="Formation de perçage en cours au studio : mains gantées, pose d'un bijou d'oreille sous la lampe d'examen.">
+    <video class="hero__video" id="heroVideo" muted loop playsinline preload="none"
+           data-src="assets/hero.mp4" poster="assets/hero.jpg" aria-hidden="true" tabindex="-1"></video>
+    <div class="hero__tint"></div>
+    <div class="hero__scrim"></div>
+    <div class="hero__grain"></div>
   </div>
 
-  <div class="enveloppe hero-contenu">
-    <p class="sourcil">
-      <span class="fr">Montréal · Sur rendez-vous</span>
-      <span class="en">Montréal · By appointment</span>
-    </p>
+  <div class="hero__in">
+    <p class="eyebrow" data-reveal style="--i:0">Académie de perçage · Montréal</p>
+    <h1 data-reveal style="--i:1">Apprenez le perçage, <em>de la théorie à votre premier client.</em></h1>
+    <p class="lede" data-reveal style="--i:2">Formation pratique sur modèle, certification remise à la fin, et un accompagnement pour vos débuts. En petit groupe, avec du vrai matériel.</p>
+    <div class="hero__cta" data-reveal style="--i:3">
+      <a href="#contact" class="btn">Réserver mon appel-conseil
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#formations" class="btn btn--ghost">Voir les formations</a>
+    </div>
+    <p class="hero__note" data-reveal style="--i:4">Sans engagement — on répond d'abord à vos questions.</p>
+  </div>
 
-    <h1>
-      <span class="fr"><span class="chute">L’aiguille,</span> <span class="chute"><em>en douceur.</em></span></span>
-      <span class="en"><span class="chute">The needle,</span> <span class="chute"><em>gently.</em></span></span>
-    </h1>
-
-    <p class="plomb">
-      <span class="fr">Studio de perçage à l’aiguille et centre de formation, à Montréal. Bijoux en titane implant-grade. Crème anesthésiante avant le geste.</span>
-      <span class="en">Needle piercing studio and training centre in Montréal. Implant-grade titanium jewellery. Numbing cream applied before the piercing.</span>
-    </p>
-
-    <a class="appel" href="tel:+14389019009">
-      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
-        <path d="M4.4 1.3 6 1a1 1 0 0 1 1.1.6l.9 2.1a1 1 0 0 1-.3 1.1l-1 .9a9 9 0 0 0 3.6 3.6l.9-1a1 1 0 0 1 1.1-.3l2.1.9A1 1 0 0 1 15 10l-.3 1.6a1.3 1.3 0 0 1-1.3 1C7 12.4 3.6 9 3.4 2.6a1.3 1.3 0 0 1 1-1.3Z"/>
-      </svg>
-      <span class="fr">Appeler le 438 901-9009</span>
-      <span class="en">Call 438 901-9009</span>
-    </a>
+  <div class="hero__foot">
+    <span class="scrollcue">Défiler</span>
+    <button class="vidbtn" id="vidToggle" aria-label="Mettre la vidéo en pause">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="vidIcon"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    </button>
   </div>
 </section>
 
-<!-- ── Bandeau de preuve ─────────────────────────────────────── -->
-<div class="bandeau">
-  <div class="enveloppe">
-    <ul>
-      <li><b>5,0</b>&nbsp;<span class="fr">sur 11 avis Google</span><span class="en">from 11 Google reviews</span></li>
-      <li><span class="fr">Perçage à l’aiguille, jamais au pistolet</span><span class="en">Needle piercing, never a gun</span></li>
-      <li><span class="fr">Titane implant-grade</span><span class="en">Implant-grade titanium</span></li>
-      <li><span class="fr">Sur rendez-vous</span><span class="en">By appointment</span></li>
-    </ul>
+<!-- ================= BANDEAU ================= -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Perçage d'oreilles</span><span>Perçage corporel</span><span>Certification remise</span><span>Pratique sur modèle</span><span>Kit de départ optionnel</span><span>Suivi après la formation</span>
+    <span>Perçage d'oreilles</span><span>Perçage corporel</span><span>Certification remise</span><span>Pratique sur modèle</span><span>Kit de départ optionnel</span><span>Suivi après la formation</span>
   </div>
 </div>
 
-<!-- ── La fondatrice ─────────────────────────────────────────── -->
-<section class="section" id="a-propos">
-  <div class="enveloppe duo">
-    <div class="reveler">
-      <p class="sourcil"><span class="fr">La fondatrice</span><span class="en">The founder</span></p>
-      <h2 class="titre">Nour Jeha</h2>
+<!-- ================= PILIERS ================= -->
+<section class="sec" id="pourquoi">
+  <div class="wrap sec__head">
+    <div>
+      <p class="eyebrow" data-reveal>Ce qui change chez nous</p>
+      <h2 data-reveal style="--i:1">Une formation qui se termine <em>par un vrai départ.</em></h2>
     </div>
-    <div class="reveler d1">
-      <p class="plomb">
-        <span class="fr">Nour Jeha perce à l’aiguille, jamais au pistolet, avec des bijoux en titane implant-grade. Une crème anesthésiante est appliquée avant le geste.</span>
-        <span class="en">Nour Jeha pierces with a needle, never a gun, using implant-grade titanium jewellery. Numbing cream is applied before the piercing.</span>
-      </p>
-      <p class="plomb">
-        <span class="fr">Ses onze avis Google lui donnent 5,0 sur 5. Ils disent tous la même chose : la propreté du matériel, la patience avec les enfants, la douceur du geste — jusque sur une oreille de quatre mois.</span>
-        <span class="en">Her eleven Google reviews give her 5.0 out of 5. They all say the same thing: spotless equipment, patience with children, a gentle hand — down to a four-month-old’s ear.</span>
-      </p>
-      <p class="plomb">
-        <span class="fr">Elle forme aussi celles et ceux qui veulent en faire leur métier.</span>
-        <span class="en">She also trains those who want to make it their trade.</span>
-      </p>
-    </div>
+    <p class="lede" data-reveal style="--i:2">La formation est donnée par Nour Jeha, fondatrice de Doux Perçage. La théorie, tout le monde la donne&nbsp;: ce qui manque après, c'est la pratique, le papier officiel et quelqu'un à qui poser ses questions la première semaine.</p>
   </div>
-</section>
-
-<!-- ── Le perçage ────────────────────────────────────────────── -->
-<section class="section section--serre" id="percage">
-  <div class="enveloppe duo">
-    <div class="reveler">
-      <p class="sourcil"><span class="fr">Le perçage</span><span class="en">Piercing</span></p>
-      <h2 class="titre">
-        <span class="fr">À l’aiguille, <em>en titane</em></span>
-        <span class="en">By needle, <em>in titanium</em></span>
-      </h2>
-    </div>
-
-    <div class="reveler d1">
-      <ul class="zones">
-        <li>Lobe</li>
-        <li><span class="fr">Hélix</span><span class="en">Helix</span></li>
-        <li><span class="fr">Nez</span><span class="en">Nose</span></li>
-        <li><span class="fr">Nombril</span><span class="en">Navel</span></li>
-      </ul>
-
-      <dl class="faits">
-        <div class="fait">
-          <dt><span class="fr">Technique</span><span class="en">Technique</span></dt>
-          <dd><span class="fr">À l’aiguille, jamais au pistolet.</span><span class="en">Needle only, never a piercing gun.</span></dd>
-        </div>
-        <div class="fait">
-          <dt><span class="fr">Bijoux</span><span class="en">Jewellery</span></dt>
-          <dd><span class="fr">Titane implant-grade, hypoallergénique.</span><span class="en">Implant-grade titanium, hypoallergenic.</span></dd>
-        </div>
-        <div class="fait">
-          <dt><span class="fr">Confort</span><span class="en">Comfort</span></dt>
-          <dd><span class="fr">Crème anesthésiante appliquée avant le geste.</span><span class="en">Numbing cream applied beforehand.</span></dd>
-        </div>
-        <div class="fait">
-          <dt><span class="fr">Âge</span><span class="en">Age</span></dt>
-          <dd><span class="fr">Bébés, enfants et adultes.</span><span class="en">Babies, children and adults.</span></dd>
-        </div>
-        <div class="fait">
-          <dt><span class="fr">Tarif</span><span class="en">Price</span></dt>
-          <dd><span class="fr">Sur demande, à l’appel.</span><span class="en">On request, over the phone.</span></dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<!-- ── La formation ──────────────────────────────────────────── -->
-<section class="section section--serre" id="formation">
-  <div class="enveloppe">
-    <div class="reveler intro">
-      <p class="sourcil"><span class="fr">La formation</span><span class="en">Training</span></p>
-      <h2 class="titre">
-        <span class="fr">Apprendre le métier, <em>puis le vivre</em></span>
-        <span class="en">Learn the trade, <em>then live from it</em></span>
-      </h2>
-      <p class="plomb">
-        <span class="fr">Deux parcours privés, tout inclus. Chacun délivre deux certificats, un kit de démarrage, et un accompagnement qui ne s’arrête pas à la fin du cours.</span>
-        <span class="en">Two private programs, all inclusive. Each grants two certificates, a starter kit, and support that does not end when the course does.</span>
-      </p>
-    </div>
-
-    <div class="formations">
-      <article class="formation reveler d1">
-        <h3><span class="fr">Perçage corporel</span><span class="en">Body piercing</span></h3>
-        <p class="portee"><span class="fr">Le corps complet.</span><span class="en">The full body.</span></p>
-        <p class="prix">2&nbsp;516&nbsp;$<small><span class="fr">avant taxes · tout inclus</span><span class="en">before tax · all inclusive</span></small></p>
-        <ul class="inclus">
-          <li><span class="fr">Certificat de perceur·euse professionnel·le</span><span class="en">Professional piercer certificate</span></li>
-          <li><span class="fr">Certificat pathogènes à transmission hématogène</span><span class="en">Bloodborne pathogens certificate</span></li>
-          <li><span class="fr">Kit de démarrage pour vos dix premiers clients</span><span class="en">Starter kit covering your first ten clients</span></li>
-          <li><span class="fr">Accompagnement au démarrage : référencement, publicités Meta, qualification de prospects</span><span class="en">Launch support: search visibility, Meta ads, lead qualification</span></li>
-          <li><span class="fr">Soutien par texto et par appel après la formation</span><span class="en">Text and phone support after the course</span></li>
-        </ul>
+  <div class="wrap">
+    <div class="pillars">
+      <article class="pillar" data-reveal style="--i:0">
+        <span class="pillar__num">01</span>
+        <h3>Vous pratiquez sur modèle</h3>
+        <p>Pas juste des démonstrations : vous faites le geste vous-même, encadrée, jusqu'à ce qu'il soit propre.</p>
       </article>
-
-      <article class="formation reveler d2">
-        <h3><span class="fr">Perçage d’oreille</span><span class="en">Ear piercing</span></h3>
-        <p class="portee"><span class="fr">L’oreille et la curation.</span><span class="en">The ear and curation.</span></p>
-        <p class="prix">1&nbsp;467&nbsp;$<small><span class="fr">avant taxes · tout inclus</span><span class="en">before tax · all inclusive</span></small></p>
-        <ul class="inclus">
-          <li><span class="fr">Certificat de perceur·euse professionnel·le</span><span class="en">Professional piercer certificate</span></li>
-          <li><span class="fr">Certificat pathogènes à transmission hématogène</span><span class="en">Bloodborne pathogens certificate</span></li>
-          <li><span class="fr">Kit de démarrage pour vos dix premiers clients</span><span class="en">Starter kit covering your first ten clients</span></li>
-          <li><span class="fr">Accompagnement au démarrage : référencement, publicités Meta, qualification de prospects</span><span class="en">Launch support: search visibility, Meta ads, lead qualification</span></li>
-          <li><span class="fr">Soutien par texto et par appel après la formation</span><span class="en">Text and phone support after the course</span></li>
-        </ul>
+      <article class="pillar" data-reveal style="--i:1">
+        <span class="pillar__num">02</span>
+        <h3>Vous repartez certifiée</h3>
+        <p>Un certificat nominatif remis à la fin de la formation, prêt à montrer à vos clients et à afficher.</p>
+      </article>
+      <article class="pillar" data-reveal style="--i:2">
+        <span class="pillar__num">03</span>
+        <h3>Vous n'êtes pas laissée seule</h3>
+        <p>Un accompagnement pour vos débuts : hygiène, matériel, prix, premiers rendez-vous.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ── Les avis ──────────────────────────────────────────────── -->
-<section class="section section--serre" id="avis">
-  <div class="enveloppe">
-    <div class="reveler intro">
-      <p class="sourcil"><span class="fr">Les avis</span><span class="en">Reviews</span></p>
-      <h2 class="titre">
-        <span class="fr">5,0 sur <em>onze avis</em></span>
-        <span class="en">5.0 from <em>eleven reviews</em></span>
-      </h2>
+<!-- ================= FORMATIONS ================= -->
+<section class="sec sec--light" id="formations">
+  <div class="wrap sec__head">
+    <div>
+      <p class="eyebrow" data-reveal>Les formations</p>
+      <h2 data-reveal style="--i:1">Deux parcours, <em>selon où vous voulez aller.</em></h2>
     </div>
+    <p class="lede" data-reveal style="--i:2">Vous hésitez entre les deux? C'est exactement le genre de question qu'on démêle en dix minutes au téléphone.</p>
+  </div>
+  <div class="wrap">
+    <div class="cards">
+      <article class="card" data-reveal style="--i:0">
+        <p class="card__kicker">Parcours 01</p>
+        <h3>Perçage d'oreilles</h3>
+        <p style="color:#4A4C57">Le lobe, le cartilage et les montages les plus demandés en salon. Le parcours le plus rapide pour ajouter un service rentable.</p>
+        <ul>
+          <li>Anatomie de l'oreille et points à éviter</li>
+          <li>Hygiène, stérilisation et gestion des risques</li>
+          <li>Pratique encadrée sur modèle</li>
+          <li>Formats mini ou grand, selon votre niveau</li>
+        </ul>
+        <p class="card__price">Tarif détaillé à l'appel
+          <small>Kit de départ optionnel — on en parle ensemble.</small></p>
+        <a href="#contact" class="btn btn--dark">Ce parcours m'intéresse</a>
+      </article>
+      <article class="card" data-reveal style="--i:1">
+        <p class="card__kicker">Parcours 02</p>
+        <h3>Perçage corporel</h3>
+        <p style="color:#4A4C57">Nombril, arcade, nez, langue et compagnie. Le parcours complet pour travailler comme perceuse à temps plein.</p>
+        <ul>
+          <li>Anatomie et placement selon la morphologie</li>
+          <li>Protocole d'asepsie de A à Z</li>
+          <li>Pratique encadrée sur modèle</li>
+          <li>Format grand seulement</li>
+        </ul>
+        <p class="card__price">Tarif détaillé à l'appel
+          <small>Kit de départ optionnel — on en parle ensemble.</small></p>
+        <a href="#contact" class="btn btn--dark">Ce parcours m'intéresse</a>
+      </article>
+    </div>
+  </div>
+</section>
 
+<!-- ================= DÉROULÉ ================= -->
+<section class="sec" id="deroule">
+  <div class="wrap sec__head">
+    <div>
+      <p class="eyebrow" data-reveal>Comment ça se passe</p>
+      <h2 data-reveal style="--i:1">De l'appel au premier client.</h2>
+    </div>
+    <p class="lede" data-reveal style="--i:2">Quatre étapes, aucune surprise. Vous savez à quoi vous attendre avant même de réserver.</p>
+  </div>
+  <div class="wrap">
+    <div class="steps">
+      <article class="step" data-reveal style="--i:0"><span class="step__n">1</span><h3>L'appel-conseil</h3><p>Dix minutes pour cerner votre objectif, votre niveau et le bon parcours. Aucune pression.</p></article>
+      <article class="step" data-reveal style="--i:1"><span class="step__n">2</span><h3>La formation</h3><p>Théorie le matin, pratique sur modèle en après-midi, avec le matériel professionnel.</p></article>
+      <article class="step" data-reveal style="--i:2"><span class="step__n">3</span><h3>La certification</h3><p>Votre certificat nominatif, remis en main propre à la fin de la journée.</p></article>
+      <article class="step" data-reveal style="--i:3"><span class="step__n">4</span><h3>Le démarrage</h3><p>On reste disponibles pour vos questions pendant que vous lancez votre service.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE ================= -->
+<section class="sec sec--light" id="service">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow" data-reveal>Vous ne cherchez pas une formation?</p>
+      <h2 data-reveal style="--i:1">Venez simplement <em>vous faire percer.</em></h2>
+      <p class="lede" data-reveal style="--i:2">Oreilles ou corporel, dans un environnement stérile et sans jugement. On prend le temps de placer le bijou au bon endroit — et de vous expliquer comment en prendre soin après.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:2em" data-reveal="" data-i="3">
+        <a href="#contact" class="btn btn--dark">Prendre rendez-vous</a>
+      </div>
+    </div>
+    <div class="frame" data-reveal style="--i:2"><img src="assets/atelier.jpg" width="560" height="989" loading="lazy" alt="Pose d'un bijou d'oreille en gros plan, avec gants stériles"></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec sec--light" style="padding-top:0" id="faq">
+  <div class="wrap" style="max-width:900px">
+    <p class="eyebrow" data-reveal>Questions fréquentes</p>
+    <h2 data-reveal style="--i:1;margin-bottom:1.4em">Ce qu'on nous demande le plus.</h2>
+    <div class="faq" data-reveal style="--i:2">
+      <details>
+        <summary>Est-ce que j'ai besoin d'expérience avant de m'inscrire?</summary>
+        <p>Non. La formation part de zéro : anatomie, hygiène, matériel, puis la pratique. Si vous avez déjà une base en esthétique, on ajuste le rythme.</p>
+      </details>
+      <details>
+        <summary>Est-ce que le certificat est reconnu?</summary>
+        <p>Vous recevez un certificat nominatif de l'académie, remis à la fin de la formation. On vous explique aussi les exigences d'hygiène de votre municipalité avant de commencer à pratiquer.</p>
+      </details>
+      <details>
+        <summary>Le matériel est-il inclus?</summary>
+        <p>Tout le matériel nécessaire est fourni pendant la journée. Un kit de départ est offert en option pour celles qui veulent commencer tout de suite après.</p>
+      </details>
+      <details>
+        <summary>Combien de temps avant de pouvoir percer mes propres clients?</summary>
+        <p>Ça dépend de votre situation, mais la plupart commencent dans les semaines qui suivent. C'est justement ce qu'on regarde ensemble pendant l'appel-conseil.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVIS ================= -->
+<section class="sec" id="avis">
+  <div class="wrap sec__head">
+    <div>
+      <p class="eyebrow" data-reveal>Les avis</p>
+      <h2 data-reveal style="--i:1">5,0 sur onze avis, <em>et tous disent la même chose.</em></h2>
+    </div>
+    <p class="lede" data-reveal style="--i:2">La douceur du geste, la propreté du matériel, la patience avec les enfants. Ce sont les clientes de Nour qui l'écrivent — on ne fait que les recopier.</p>
+  </div>
+  <div class="wrap">
     <div class="avis">
-      <figure class="reveler d1">
-        <blockquote lang="en">« Nour is Amazing, caring and very professional. I got my 4 months old daughter’s ears pierced, she was very gentle, my baby barely felt the pain. She used the best equipment and applied numbing cream to minimize the pain. »</blockquote>
-        <figcaption><b>Batoul Wehbe</b><span class="fr">Avis Google</span><span class="en">Google review</span></figcaption>
+      <figure data-reveal style="--i:0">
+        <blockquote lang="en">« Nour is Amazing, caring and very professional. I got my 4 months old daughter&rsquo;s ears pierced, she was very gentle, my baby barely felt the pain. She used the best equipment and applied numbing cream to minimize the pain. »</blockquote>
+        <figcaption><b>Batoul Wehbe</b>Avis Google</figcaption>
       </figure>
-
-      <figure class="reveler d2">
+      <figure data-reveal style="--i:1">
         <blockquote lang="en">« I had a wonderful experience with Nour. She is kind, gentle, and very caring with children, which made the whole experience comfortable and enjoyable. The place was very clean, and all the equipment was spotless and well organized. I highly recommend her, and I will definitely come back again. »</blockquote>
-        <figcaption><b>Hanadi Al-Qadani</b><span class="fr">Avis Google</span><span class="en">Google review</span></figcaption>
+        <figcaption><b>Hanadi Al-Qadani</b>Avis Google</figcaption>
       </figure>
-
-      <figure class="reveler d3">
-        <blockquote lang="en">« We had a great experience getting my daughter’s ears pierced. Nour was kind, patient, and professional, and she made us feel comfortable throughout the whole process. Everything was clean, and the piercing was quick and gentle. Highly recommend! »</blockquote>
-        <figcaption><b>Nagham Merheb</b><span class="fr">Avis Google</span><span class="en">Google review</span></figcaption>
+      <figure data-reveal style="--i:2">
+        <blockquote lang="en">« We had a great experience getting my daughter&rsquo;s ears pierced. Nour was kind, patient, and professional, and she made us feel comfortable throughout the whole process. Everything was clean, and the piercing was quick and gentle. Highly recommend! »</blockquote>
+        <figcaption><b>Nagham Merheb</b>Avis Google</figcaption>
       </figure>
     </div>
-
-    <p class="mention reveler">
-      <span class="fr">Avis publiés sur Google, reproduits intégralement et sans traduction.</span>
-      <span class="en">Reviews published on Google, reproduced in full and untranslated.</span>
-    </p>
+    <p class="avis__note" data-reveal>Avis publiés sur Google, reproduits intégralement et sans traduction. Ils portent sur le service de perçage&nbsp;: c'est la même main qui enseigne.</p>
   </div>
 </section>
 
-<!-- ── Adresse ───────────────────────────────────────────────── -->
-<section class="section section--serre" id="adresse">
-  <div class="enveloppe duo">
-    <div class="reveler">
-      <p class="sourcil"><span class="fr">Rendez-vous</span><span class="en">Appointments</span></p>
-      <h2 class="titre">
-        <span class="fr">Sur rendez-vous, <em>à Montréal</em></span>
-        <span class="en">By appointment, <em>in Montréal</em></span>
-      </h2>
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow" data-reveal>Réserver</p>
+      <h2 data-reveal style="--i:1">Laissez-nous votre numéro, <em>on s'occupe du reste.</em></h2>
+      <p class="lede" data-reveal style="--i:2">Une conseillère vous rappelle pour répondre à vos questions et, si ça vous convient, réserver votre place. Ça prend dix minutes.</p>
+      <ul style="list-style:none;padding:0;margin:2.4em 0 0;display:grid;gap:1em;color:var(--brume);font-size:.95rem" data-reveal="" >
+        <li>Sur rendez-vous — on vous rappelle</li>
+        <li>Montréal, Québec</li>
+      </ul>
     </div>
-    <div class="reveler d1">
-      <a class="adresse-lien"
-         href="https://www.google.com/maps/dir/?api=1&amp;destination=9825%20Bd%20de%20l%27Acadie%20%23106%2C%20Montr%C3%A9al%2C%20QC%20H4N%202W2"
-         target="_blank" rel="noopener">
-        9825, boul. de l’Acadie<br>bureau 106<br>Montréal (Québec) H4N 2W2
-      </a>
-      <p class="plomb" style="margin-top:var(--s4)">
-        <span class="fr">Le studio reçoit uniquement sur rendez-vous. Appelez pour convenir d’une heure.</span>
-        <span class="en">The studio receives by appointment only. Call to arrange a time.</span>
-      </p>
-    </div>
+
+    <form class="form" id="leadForm" novalidate data-reveal style="--i:1">
+      <div class="form__body">
+        <div class="form__row">
+          <div class="field">
+            <label for="prenom">Prénom</label>
+            <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="tel">Téléphone</label>
+            <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="but">Vous nous écrivez pour…</label>
+          <select id="but" name="but">
+            <option>La formation en perçage</option>
+            <option>Me faire percer</option>
+            <option>Je ne sais pas encore</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="type">Type de perçage</label>
+          <select id="type" name="type">
+            <option>Oreilles</option>
+            <option>Corporel</option>
+            <option>Les deux</option>
+            <option>À déterminer</option>
+          </select>
+        </div>
+        <button type="submit" class="btn" style="width:100%;justify-content:center;margin-top:6px">Demander mon rappel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form__note" id="formEtat" hidden style="color:var(--or-clair)"></p>
+        <p class="form__note">Vos informations servent uniquement à vous rappeler. Aucun paiement en ligne.</p>
+      </div>
+      <p class="form__ok">Merci — c'est noté. Une conseillère vous appelle sous peu.</p>
+    </form>
   </div>
 </section>
 
 </main>
 
-<!-- ── Pied de page ──────────────────────────────────────────── -->
-<footer class="pied">
-  <div class="enveloppe">
-    <div class="pied-haut">
-      <h2>
-        <span class="fr">Un lobe, un hélix, <em>ou tout un métier.</em></span>
-        <span class="en">One lobe, one helix, <em>or a whole trade.</em></span>
-      </h2>
-      <a class="appel" href="tel:+14389019009">
-        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
-          <path d="M4.4 1.3 6 1a1 1 0 0 1 1.1.6l.9 2.1a1 1 0 0 1-.3 1.1l-1 .9a9 9 0 0 0 3.6 3.6l.9-1a1 1 0 0 1 1.1-.3l2.1.9A1 1 0 0 1 15 10l-.3 1.6a1.3 1.3 0 0 1-1.3 1C7 12.4 3.6 9 3.4 2.6a1.3 1.3 0 0 1 1-1.3Z"/>
-        </svg>
-        <span class="fr">Appeler le 438 901-9009</span>
-        <span class="en">Call 438 901-9009</span>
-      </a>
-    </div>
-
-    <div class="pied-grille">
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
       <div>
-        <h3><span class="fr">Studio</span><span class="en">Studio</span></h3>
-        <p>9825, boul. de l’Acadie, bureau 106<br>Montréal (Québec) H4N 2W2</p>
+        <p class="logo" style="margin:0 0 .8em">Doux<span>·</span>Perçage</p>
+        <p style="color:var(--brume);max-width:34ch;margin:0">Formation et service de perçage, à Montréal. Le geste précis, la manière douce.</p>
       </div>
       <div>
-        <h3><span class="fr">Joindre</span><span class="en">Contact</span></h3>
+        <h4>Navigation</h4>
         <ul>
-          <li><a href="tel:+14389019009">438 901-9009</a></li>
-          <li><a href="tel:+15149459458">514 945-9458<span class="fr"> · ligne directe</span><span class="en"> · direct line</span></a></li>
-          <li><a href="mailto:info@douxpercage.ca">info@douxpercage.ca</a></li>
+          <li><a href="#formations">Formations</a></li>
+          <li><a href="#deroule">Déroulé</a></li>
+          <li><a href="#service">Se faire percer</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
         </ul>
       </div>
       <div>
-        <h3><span class="fr">Suivre</span><span class="en">Follow</span></h3>
+        <h4>Nous joindre</h4>
         <ul>
+          <li><a href="tel:+14389019009">438 901-9009</a></li>
+          <li><a href="tel:+15149459458">514 945-9458 · ligne directe</a></li>
+          <li><a href="mailto:info@douxpercage.ca">info@douxpercage.ca</a></li>
           <li><a href="https://www.instagram.com/douxpercage/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@doux.percage" target="_blank" rel="noopener">TikTok</a></li>
         </ul>
       </div>
-      <div>
-        <h3><span class="fr">Heures</span><span class="en">Hours</span></h3>
-        <p><span class="fr">Sur rendez-vous uniquement</span><span class="en">By appointment only</span></p>
-      </div>
     </div>
-
-    <div class="pied-bas">
-      <p>© 2026 Doux Perçage</p>
-      <p>
-        <span class="fr">Ce site ne dépose aucun témoin et ne recueille aucune donnée personnelle.</span>
-        <span class="en">This site sets no cookies and collects no personal data.</span>
-      </p>
+    <div class="foot__base">
+      <span>© 2026 Doux Perçage. Tous droits réservés.</span>
     </div>
   </div>
 </footer>
 
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* --- révélations au défilement --- */
+  var items = document.querySelectorAll('[data-reveal]');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold:.15, rootMargin:'0px 0px -8% 0px' });
+    items.forEach(function(el){ io.observe(el); });
+    /* Filet ciblé : tout élément qui occupe le viewport sans avoir été
+       dévoilé est révélé. Sur un chargement normal en haut de page aucun
+       ne l'est, donc l'animation reste intacte — mais le contenu n'est
+       jamais piégé à opacity:0 hors navigateur réel (capture headless,
+       robot d'aperçu de lien, impression). */
+    var filet = function(){
+      var h = window.innerHeight || document.documentElement.clientHeight;
+      items.forEach(function(el){
+        if (el.classList.contains('in')) return;
+        var r = el.getBoundingClientRect();
+        if (r.top < h && r.bottom > 0) el.classList.add('in');
+      });
+    };
+    setTimeout(filet, 1200); setTimeout(filet, 3000);
+    window.addEventListener('beforeprint', function(){ items.forEach(function(el){ el.classList.add('in'); }); });
+    // le héros s'anime au chargement
+    requestAnimationFrame(function(){
+      document.querySelectorAll('.hero [data-reveal]').forEach(function(el){ el.classList.add('in'); });
+    });
+  }
+
+  /* --- rail : la ligne se remplit, les studs s'allument --- */
+  var rail = document.querySelector('.rail'), fill = document.getElementById('railFill');
+  if (rail){
+    var sections = ['pourquoi','formations','deroule','service','contact']
+      .map(function(id){ return document.getElementById(id); }).filter(Boolean);
+    sections.forEach(function(s, i){
+      var d = document.createElement('span');
+      d.className = 'rail__stud';
+      d.style.top = (12 + i * (76 / (sections.length - 1))) + '%';
+      rail.appendChild(d);
+    });
+    var studs = rail.querySelectorAll('.rail__stud'), ticking = false;
+    function update(){
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var p = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+      fill.style.transform = 'scaleY(' + p + ')';
+      studs.forEach(function(s){
+        s.classList.toggle('on', p * 100 >= parseFloat(s.style.top) - 1);
+      });
+      ticking = false;
+    }
+    window.addEventListener('scroll', function(){
+      if (!ticking){ ticking = true; requestAnimationFrame(update); }
+    }, { passive:true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  /* --- contrôle de la vidéo (et pause si mouvement réduit) --- */
+  var v = document.getElementById('heroVideo'),
+      btn = document.getElementById('vidToggle'),
+      icon = document.getElementById('vidIcon');
+  var PLAY = '<path d="M8 5l11 7-11 7z"/>', PAUSE = '<rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/>';
+  /* La vidéo n'a pas de src au chargement : le LCP est donc l'image du
+     hero. « preload=none » ne télécharge rien tant qu'on ne le demande
+     pas, donc attendre « canplay » avant play() serait un interblocage.
+     On ne la dévoile qu'au premier « playing », pour ne jamais montrer
+     un cadre noir si la lecture échoue. */
+  function brancherVideo(){
+    if (!v || reduce) return;
+    var co = navigator.connection;
+    if (co && (co.saveData || /(^|-)2g$/.test(co.effectiveType || ''))) return;
+    v.src = v.getAttribute('data-src');
+    v.preload = 'auto';
+    v.load();
+    v.addEventListener('playing', function(){ v.classList.add('visible'); }, { once:true });
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){ v.classList.remove('visible'); });
+  }
+  if (document.readyState === 'complete') brancherVideo();
+  else window.addEventListener('load', brancherVideo, { once:true });
+
+  if (v && reduce){ v.pause(); if(icon) icon.innerHTML = PLAY; }
+  if (v && btn){
+    btn.addEventListener('click', function(){
+      if (v.paused){ if (!v.currentSrc) brancherVideo(); else v.play(); v.classList.add('visible'); icon.innerHTML = PAUSE; btn.setAttribute('aria-label','Mettre la vidéo en pause'); }
+      else { v.pause(); icon.innerHTML = PLAY; btn.setAttribute('aria-label','Reprendre la vidéo'); }
+    });
+  }
+
+  /* --- formulaire ---------------------------------------------
+     Tant que cette adresse est vide, le formulaire le DIT et renvoie
+     vers le téléphone. Il n'affiche jamais un succès sans avoir rien
+     transmis : c'est le défaut le plus coûteux qu'un site puisse avoir,
+     parce que personne ne peut s'en apercevoir. Renseignez une URL qui
+     accepte un POST JSON {prenom, telephone, but, type} et il marche. */
+  var ENDPOINT_FORMULAIRE = '';
+
+  var f = document.getElementById('leadForm');
+  var note = document.getElementById('formEtat');
+  function dire(html){ if(note){ note.innerHTML = html; note.hidden = false; } }
+
+  if (f){
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      var p = document.getElementById('prenom'), t = document.getElementById('tel');
+      if (!p.value.trim()){ dire('Il nous faut votre prénom pour vous rappeler.'); p.focus(); return; }
+      if (!t.value.trim()){ dire('Il nous faut votre numéro pour vous rappeler.'); t.focus(); return; }
+
+      if (!ENDPOINT_FORMULAIRE){
+        dire('Ce formulaire n’est pas encore branché : rien n’a été envoyé. On préfère vous le dire plutôt que de vous laisser attendre un rappel qui n’arriverait jamais. Appelez le <a href="tel:+14389019009">438 901-9009</a>.');
+        return;
+      }
+
+      var b = f.querySelector('button[type=submit]');
+      b.disabled = true;
+      fetch(ENDPOINT_FORMULAIRE, {
+        method:'POST', headers:{ 'Content-Type':'application/json' },
+        body: JSON.stringify({ prenom:p.value, telephone:t.value,
+          but:(document.getElementById('but')||{}).value,
+          type:(document.getElementById('type')||{}).value })
+      }).then(function(r){
+        if (!r.ok) throw new Error(r.status);
+        f.classList.add('sent');
+      }).catch(function(){
+        dire('La demande n’a pas pu être envoyée. Appelez le <a href="tel:+14389019009">438 901-9009</a>.');
+      }).then(function(){ b.disabled = false; });
+    });
+  }
+})();
+</script>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"HealthAndBeautyBusiness",
   "name":"Doux Perçage",
-  "description":"Studio de perçage à l'aiguille et centre de formation à Montréal. Bijoux en titane implant-grade.",
+  "description":"Formation en perçage d'oreilles et perçage corporel, avec certification remise à la fin. Service de perçage à l'aiguille avec bijoux en titane implant-grade. Montréal.",
   "url":"https://hostnextline.github.io/douxpercage/",
   "image":"https://hostnextline.github.io/douxpercage/assets/og.jpg",
   "telephone":"+1-438-901-9009",
   "email":"info@douxpercage.ca",
   "founder":{"@type":"Person","name":"Nour Jeha"},
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"9825 boulevard de l'Acadie, bureau 106",
-    "addressLocality":"Montréal",
-    "addressRegion":"QC",
-    "postalCode":"H4N 2W2",
-    "addressCountry":"CA"
-  },
+  "address":{"@type":"PostalAddress","streetAddress":"9825 boulevard de l'Acadie, bureau 106",
+    "addressLocality":"Montréal","addressRegion":"QC","postalCode":"H4N 2W2","addressCountry":"CA"},
   "areaServed":{"@type":"City","name":"Montréal"},
-  "availableLanguage":["fr-CA","en"],
-  "sameAs":[
-    "https://www.instagram.com/douxpercage/",
-    "https://www.tiktok.com/@doux.percage"
-  ],
-  "makesOffer":[
-    {"@type":"Offer","name":"Formation perçage corporel","price":"2516","priceCurrency":"CAD",
-     "description":"Formation privée tout inclus en perçage corporel. Deux certificats, kit de démarrage, accompagnement au démarrage et soutien après la formation. Prix avant taxes."},
-    {"@type":"Offer","name":"Formation perçage d'oreille","price":"1467","priceCurrency":"CAD",
-     "description":"Formation privée tout inclus en perçage d'oreille et curation. Deux certificats, kit de démarrage, accompagnement au démarrage et soutien après la formation. Prix avant taxes."}
-  ]
+  "sameAs":["https://www.instagram.com/douxpercage/","https://www.tiktok.com/@doux.percage"]
 }
-</script>
-
-<script>
-(function(){
-  "use strict";
-  var racine = document.documentElement;
-  var doux = matchMedia("(prefers-reduced-motion: reduce)");
-
-  /* ── Langue ──────────────────────────────────────────────── */
-  var boutons = document.querySelectorAll("[data-set-lang]");
-  function poserLangue(code, memoriser){
-    racine.setAttribute("data-lang", code);
-    racine.setAttribute("lang", code === "en" ? "en" : "fr");
-    Array.prototype.forEach.call(boutons, function(b){
-      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === code));
-    });
-    if (memoriser) { try { localStorage.setItem("dp-langue", code); } catch(e){} }
-  }
-  Array.prototype.forEach.call(boutons, function(b){
-    b.addEventListener("click", function(){ poserLangue(b.getAttribute("data-set-lang"), true); });
-  });
-  /* Le site est servi en français, toujours. Seul un choix explicite du
-     visiteur bascule en anglais — pas la langue de son navigateur : le
-     français doit rester la version par défaut d'un commerce québécois. */
-  try {
-    var memo = localStorage.getItem("dp-langue");
-    if (memo === "en" || memo === "fr") poserLangue(memo, false);
-  } catch(e){}
-
-  /* ── Révélations au défilement ───────────────────────────── */
-  var cibles = document.querySelectorAll(".reveler");
-
-  /* Filet de sécurité : révèle tout élément qui occupe le viewport sans
-     avoir été dévoilé. Sur un chargement normal en haut de page, aucun
-     « reveler » n'est encore visible — l'animation reste donc intacte.
-     Mais si l'observateur ne rend jamais la main (capture headless, robot
-     d'aperçu, impression), le contenu n'est jamais piégé à opacity:0. */
-  function revelerCeQuiEstVisible(){
-    var h = window.innerHeight || document.documentElement.clientHeight;
-    Array.prototype.forEach.call(cibles, function(el){
-      if (el.classList.contains("vu")) return;
-      var r = el.getBoundingClientRect();
-      if (r.top < h && r.bottom > 0) el.classList.add("vu");
-    });
-  }
-
-  if (doux.matches || !("IntersectionObserver" in window)) {
-    Array.prototype.forEach.call(cibles, function(el){ el.classList.add("vu"); });
-  } else {
-    var observateur = new IntersectionObserver(function(entrees){
-      entrees.forEach(function(e){
-        if (e.isIntersecting){ e.target.classList.add("vu"); observateur.unobserve(e.target); }
-      });
-    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.08 });
-    Array.prototype.forEach.call(cibles, function(el){ observateur.observe(el); });
-    setTimeout(revelerCeQuiEstVisible, 1200);
-    setTimeout(revelerCeQuiEstVisible, 3000);
-    addEventListener("beforeprint", function(){
-      Array.prototype.forEach.call(cibles, function(el){ el.classList.add("vu"); });
-    });
-  }
-
-  /* ── Vidéo du hero ───────────────────────────────────────────
-     Elle n'a pas de src au chargement : le LCP est donc le poster
-     JPEG. La vidéo n'est branchée qu'après « load », et jamais du
-     tout en mouvement réduit ou en économiseur de données.        */
-  var video = document.getElementById("video-hero");
-  function brancherVideo(){
-    if (!video || doux.matches) return;
-    var co = navigator.connection;
-    if (co && (co.saveData || /(^|-)2g$/.test(co.effectiveType || ""))) return;
-    /* « preload=none » ne télécharge rien tant qu'on ne le lui demande
-       pas : il faut donc load() puis play() explicitement. Attendre
-       « canplay » avant de jouer créerait un interblocage — rien ne se
-       charge, donc l'événement n'arrive jamais. On ne dévoile la vidéo
-       qu'au premier « playing », pour ne jamais montrer une frame noire. */
-    video.src = video.getAttribute("data-src");
-    video.preload = "auto";
-    video.load();
-    video.addEventListener("playing", function(){
-      video.classList.add("visible");
-    }, { once: true });
-    var p = video.play();
-    if (p && p.catch) p.catch(function(){ video.classList.remove("visible"); });
-  }
-  if (document.readyState === "complete") brancherVideo();
-  else addEventListener("load", brancherVideo, { once: true });
-})();
 </script>
 </body>
 </html>

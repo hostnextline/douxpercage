@@ -1,57 +1,34 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<title>Doux Perçage — carte de partage</title>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>og</title>
 <meta name="robots" content="noindex">
 <style>
-  /* Mêmes polices locales que le site : aucun appel à un tiers. */
-  @font-face{font-family:"Newsreader";font-style:normal;font-weight:200 400;font-display:block;src:url(assets/polices/newsreader-normal.woff2) format("woff2")}
-  @font-face{font-family:"Newsreader";font-style:italic;font-weight:200 400;font-display:block;src:url(assets/polices/newsreader-italic.woff2) format("woff2")}
-  @font-face{font-family:"Public Sans";font-style:normal;font-weight:400 500;font-display:block;src:url(assets/polices/publicsans-normal.woff2) format("woff2")}
-
-  /* La carte est dessinée en 1200×630, puis agrandie 1,75× pour la
-     capture : la réduction finale suréchantillonne le texte au lieu de
-     l'interpoler. La fenêtre de capture ne pouvant être redimensionnée,
-     c'est la page qui s'adapte à elle. */
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{width:2100px;height:1103px;overflow:hidden;background:#F0EAE0}
-  .carte{
-    width:1200px;height:630px;transform:scale(1.75);transform-origin:top left;
-    background:#F0EAE0;color:#1C1F1E;
-    font-family:"Public Sans",system-ui,sans-serif;
-    display:grid;grid-template-columns:1fr 452px;
-  }
-  .texte{padding:64px 56px 56px 64px;display:flex;flex-direction:column;justify-content:space-between}
-  .marque{display:flex;align-items:center;gap:14px;font-family:"Newsreader",serif;font-size:26px;font-weight:400;letter-spacing:-.01em}
-  .marque svg{width:21px;height:21px}
-  h1{font-family:"Newsreader",serif;font-weight:200;font-size:88px;line-height:.96;letter-spacing:-.038em}
-  h1 em{font-style:italic}
-  .bas{border-top:1px solid #CFCEC8;padding-top:24px;display:flex;flex-direction:column;gap:8px}
-  .bas p{font-size:19px;color:#4A4F4D}
-  .bas span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8C9196}
-  figure{position:relative;overflow:hidden}
-  figure img{width:100%;height:100%;object-fit:cover;object-position:64% 50%;display:block}
-  figure::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#F0EAE0 0%,rgba(240,234,224,0) 26%)}
-</style>
-</head>
-<body>
-  <div class="carte">
-    <div class="texte">
-      <div class="marque">
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-          <circle cx="16" cy="18.5" r="8" fill="none" stroke="#1C1F1E" stroke-width="2.6"/>
-          <circle cx="16" cy="7" r="3.6" fill="#1C1F1E"/>
-        </svg>
-        Doux Perçage
-      </div>
-      <h1>L’aiguille,<br><em>en douceur.</em></h1>
-      <div class="bas">
-        <span>Montréal · Sur rendez-vous</span>
-        <p>Perçage à l’aiguille &amp; formation certifiante</p>
-      </div>
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:300 600;font-display:block;src:url(assets/polices/fraunces-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-style:italic;font-weight:300 600;font-display:block;src:url(assets/polices/fraunces-italic.woff2) format("woff2")}
+@font-face{font-family:"Jost";font-style:normal;font-weight:300 600;font-display:block;src:url(assets/polices/jost-normal.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:2400px;height:1260px;overflow:hidden;background:#0C0D12}
+.c{width:1200px;height:630px;transform:scale(2);transform-origin:top left;position:relative;
+   background:#0C0D12;color:#F4F0E9;font-family:Jost,sans-serif;overflow:hidden}
+.bg{position:absolute;inset:0}
+.bg img{width:100%;height:100%;object-fit:cover;object-position:50% 84%;filter:brightness(1.18) saturate(1.08)}
+.bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,#0C0D12 12%,rgba(12,13,18,.93) 46%,rgba(12,13,18,.55) 88%)}
+.t{position:relative;z-index:2;padding:58px 54px;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+.m{font-family:Fraunces,serif;font-size:25px;letter-spacing:.02em}
+.m i{font-style:normal;color:#C39A57;margin:0 .3em}
+h1{font-family:Fraunces,serif;font-weight:300;font-size:64px;line-height:1.06;letter-spacing:-.015em;max-width:15ch}
+h1 em{font-style:italic;color:#E0C08A}
+.b{display:flex;flex-direction:column;gap:11px;border-top:1px solid rgba(195,154,87,.32);padding-top:22px}
+.b p{font-size:18px;color:#E8E1D5}
+.b span{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#9AA0B2}
+</style></head><body>
+<div class="c">
+  <div class="bg"><img src="assets/hero.jpg" alt=""></div>
+  <div class="t">
+    <div class="m">Doux<i>·</i>Perçage</div>
+    <h1>Apprenez le perçage, <em>de la théorie à votre premier client.</em></h1>
+    <div class="b">
+      <span>Académie de perçage · Montréal</span>
+      <p>Pratique sur modèle, certification remise à la fin, accompagnement pour vos débuts.</p>
     </div>
-    <figure><img src="assets/hero.jpg" alt=""></figure>
   </div>
-</body>
-</html>
+</div></body></html>
