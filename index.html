@@ -24,11 +24,25 @@
 <meta name="theme-color" content="#F0EAE0">
 
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..400;1,6..72,200..300&family=Public+Sans:wght@400;500&display=swap">
+<link rel="preload" as="font" type="font/woff2" href="assets/polices/newsreader-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/polices/publicsans-normal.woff2" crossorigin>
 
 <style>
+/* Polices hébergées ici, pas chez Google. Une feuille de style externe
+   bloque le rendu : tant qu'elle n'arrive pas, aucun pixel ne se peint,
+   et la latence d'un tiers décidait donc du FCP — mesuré entre 1,6 s et
+   3,1 s d'une exécution à l'autre. Ces règles étant en ligne dans le
+   document, plus rien n'attend un autre domaine.
+   Variables sur le seul axe de graisse (l'axe de taille optique triplait
+   le poids) et sous-ensemble latin seul : les 83 caractères affichés par
+   la page y tiennent tous, vérification faite. 145 Ko au total.
+   Effet de bord bienvenu : Google Fonts journalise les adresses IP des
+   visiteurs — le pied de page peut maintenant dire sans réserve que le
+   site ne recueille aucune donnée. */
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:200 400;font-display:swap;src:url(assets/polices/newsreader-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Newsreader";font-style:italic;font-weight:200 400;font-display:swap;src:url(assets/polices/newsreader-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:400 500;font-display:swap;src:url(assets/polices/publicsans-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 /* ─────────────────────────────────────────────────────────────
    Doux Perçage
    Palette : ivoire · encre · titane. Aucun or dans l'interface —

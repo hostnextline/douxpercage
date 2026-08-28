@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <title>Doux Perçage — carte de partage</title>
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..400;1,6..72,200..300&family=Public+Sans:wght@400;500&display=swap">
 <style>
+  /* Mêmes polices locales que le site : aucun appel à un tiers. */
+  @font-face{font-family:"Newsreader";font-style:normal;font-weight:200 400;font-display:block;src:url(assets/polices/newsreader-normal.woff2) format("woff2")}
+  @font-face{font-family:"Newsreader";font-style:italic;font-weight:200 400;font-display:block;src:url(assets/polices/newsreader-italic.woff2) format("woff2")}
+  @font-face{font-family:"Public Sans";font-style:normal;font-weight:400 500;font-display:block;src:url(assets/polices/publicsans-normal.woff2) format("woff2")}
+
   /* La carte est dessinée en 1200×630, puis agrandie 1,75× pour la
      capture : la réduction finale suréchantillonne le texte au lieu de
      l'interpoler. La fenêtre de capture ne pouvant être redimensionnée,
