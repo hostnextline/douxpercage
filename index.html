@@ -316,6 +316,14 @@ html[data-lang="en"] .en{display:revert}
   .reveler{opacity:1;transform:none}
 }
 </style>
+
+<!-- Les révélations partent de opacity:0 et ne sont dévoilées que par le
+     script. Sans JavaScript, la page resterait donc presque vide : on
+     rétablit tout ici. Le contenu passe avant l'animation. -->
+<noscript><style>
+  .reveler{opacity:1;transform:none}
+  .chute{opacity:1;transform:none;animation:none}
+</style></noscript>
 </head>
 <body>
 
