@@ -315,6 +315,13 @@ html[data-lang="en"] .en{display:revert}
   .chute{opacity:1;transform:none}
   .reveler{opacity:1;transform:none}
 }
+
+/* À l'impression, rien ne doit dépendre d'un défilement qui n'aura pas lieu. */
+@media print{
+  .chute{opacity:1;transform:none;animation:none}
+  .reveler{opacity:1;transform:none}
+  .hero{min-height:auto}
+}
 </style>
 
 <!-- Les révélations partent de opacity:0 et ne sont dévoilées que par le
@@ -684,6 +691,21 @@ html[data-lang="en"] .en{display:revert}
 
   /* ── Révélations au défilement ───────────────────────────── */
   var cibles = document.querySelectorAll(".reveler");
+
+  /* Filet de sécurité : révèle tout élément qui occupe le viewport sans
+     avoir été dévoilé. Sur un chargement normal en haut de page, aucun
+     « reveler » n'est encore visible — l'animation reste donc intacte.
+     Mais si l'observateur ne rend jamais la main (capture headless, robot
+     d'aperçu, impression), le contenu n'est jamais piégé à opacity:0. */
+  function revelerCeQuiEstVisible(){
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    Array.prototype.forEach.call(cibles, function(el){
+      if (el.classList.contains("vu")) return;
+      var r = el.getBoundingClientRect();
+      if (r.top < h && r.bottom > 0) el.classList.add("vu");
+    });
+  }
+
   if (doux.matches || !("IntersectionObserver" in window)) {
     Array.prototype.forEach.call(cibles, function(el){ el.classList.add("vu"); });
   } else {
@@ -693,6 +715,11 @@ html[data-lang="en"] .en{display:revert}
       });
     }, { rootMargin: "0px 0px -12% 0px", threshold: 0.08 });
     Array.prototype.forEach.call(cibles, function(el){ observateur.observe(el); });
+    setTimeout(revelerCeQuiEstVisible, 1200);
+    setTimeout(revelerCeQuiEstVisible, 3000);
+    addEventListener("beforeprint", function(){
+      Array.prototype.forEach.call(cibles, function(el){ el.classList.add("vu"); });
+    });
   }
 
   /* ── Vidéo du hero ───────────────────────────────────────────
